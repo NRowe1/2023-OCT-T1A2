@@ -1,0 +1,80 @@
+@import "../../index";
+
+@media screen and (min-width:$medium){
+    #skills{
+  
+      margin: 0px;
+  
+  
+      .Profile {
+          display: flex;
+          // justify-content: space-between;
+          // height: auto;
+          // margin: 0px;
+          position: relative; 
+          
+  
+      
+          img {
+              height:370px;
+              width:500px;
+              // top:20px;
+              // left:100px;
+              margin-left: 100px;
+  
+          }
+       
+      .Intro {
+      padding: 3%;
+      border: black  2px solid;
+      text-align: left;
+      margin: auto;
+  
+      p {
+          display: block;
+          font-size: 10px;
+      }
+  
+  
+      }
+    }
+  }
+  }
+  
+  @media screen and (max-width:$medium){
+      #skills{
+          display: flex;
+          flex-direction: column;
+    
+    
+        .Profile {
+          justify-content: center;
+          align-items: center;
+             
+            
+    
+        
+            img {
+                height:250px;
+                width:355px;
+                
+                
+  
+  
+            }
+          
+        .Intro{
+        padding: 3%;
+        margin: auto;
+        margin-top: 1rem;
+        border: black  2px dotted;
+        justify-content: end;
+        text-align: left;
+    
+
+    
+      }
+        }
+      }
+    }
+  

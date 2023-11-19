@@ -1,0 +1,247 @@
+header {
+  background-color: #222222;
+  padding: 16px;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  header .logo {
+    margin-bottom: 48px;
+  }
+}
+header .logo img {
+  width: 100px;
+}
+header #nav-items {
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+}
+header #nav-items a {
+  text-decoration: none;
+  color: beige;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  header .logo {
+    margin-bottom: 0;
+  }
+  header #nav-items {
+    width: 50%;
+    font-size: 20px;
+  }
+}
+footer {
+  background-color: #222222;
+  padding: 16px;
+  text-align: center;
+}
+footer .social-media {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 32px;
+  margin-top: auto;
+}
+footer .social-media a i {
+  font-size: 32px;
+  color: rgb(255, 255, 255);
+}
+footer .info {
+  color: rgb(41, 41, 41);
+  font-size: 18px;
+}
+
+@media screen and (min-width: 600px) {
+  footer .social-media {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+body {
+  background-color: #f2efe6;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about-container .About-me {
+  text-align: center;
+  margin: 10px;
+}
+#about-container .About-me p {
+  font-size: 24px;
+}
+
+#portfolio-container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  padding: 3%;
+}
+#portfolio-container .experience {
+  background-color: gray;
+  border: #222222 1px solid;
+  padding: 5px;
+  width: 45%;
+  text-align: left;
+}
+#portfolio-container .education {
+  background-color: gray;
+  border: red 1px solid;
+  padding: 5px;
+  margin: auto;
+  width: 45%;
+  text-align: left;
+}
+
+#contact-container {
+  background-color: #f2efe6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3%;
+}
+#contact-container .contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-top: 0%;
+}
+#contact-container .contact-links {
+  display: flex;
+  flex-direction: column;
+  font-size: 50px;
+}
+#contact-container #email-input {
+  margin-left: 40px;
+}
+#contact-container #password-input {
+  margin-left: 20px;
+}
+#contact-container #submit-btn {
+  height: 50px;
+  width: auto;
+  font-size: 18px;
+  background-color: gray;
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+#contact-container #submit-btn:hover {
+  background-color: rgb(0, 0, 0);
+}
+#contact-container textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+@media screen and (max-width: 600px) {
+  #contact-container {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+  }
+  #contact-container .contact-form {
+    width: 100vw;
+    margin-top: 0%;
+  }
+  #contact-container .contact-links {
+    flex-direction: row;
+    font-size: 60px;
+  }
+  #contact-container #email-input {
+    margin-left: 40px;
+  }
+  #contact-container #password-input {
+    margin-left: 20px;
+  }
+  #contact-container #submit-btn {
+    height: 50px;
+    width: auto;
+    font-size: 18px;
+    background-color: gray;
+    color: rgb(158, 64, 64);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+  }
+  #contact-container #submit-btn:hover {
+    background-color: brown;
+  }
+  #contact-container textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  #skills {
+    margin: 0px;
+  }
+  #skills .Profile {
+    display: flex;
+    position: relative;
+  }
+  #skills .Profile img {
+    height: 370px;
+    width: 500px;
+    margin-left: 100px;
+  }
+  #skills .Profile .Intro {
+    padding: 3%;
+    border: black 2px solid;
+    text-align: left;
+    margin: auto;
+  }
+  #skills .Profile .Intro p {
+    display: block;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #skills {
+    display: flex;
+    flex-direction: column;
+  }
+  #skills .Profile {
+    justify-content: center;
+    align-items: center;
+  }
+  #skills .Profile img {
+    height: 250px;
+    width: 355px;
+  }
+  #skills .Profile .Intro {
+    padding: 3%;
+    margin: auto;
+    margin-top: 1rem;
+    border: black 2px dotted;
+    justify-content: end;
+    text-align: left;
+  }
+}/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,59 @@
+@import "../Deafults/colors";
+@import "../Deafults/breakpoints";
+
+
+
+@mixin background-stuff() {
+    background-color: $primary-color;
+    padding: 16px;
+    text-align: center;
+}
+
+header {
+    @include background-stuff();
+
+    .logo {
+        @media screen and (max-width: $medium) {
+            margin-bottom:48px;
+        }
+    
+
+        img {
+            width:100px;
+           
+        }
+      
+        }
+        #nav-items {
+            display: flex;
+            justify-content: space-around;
+            font-size: 30px;
+    
+            a {
+                text-decoration: none;
+                color: beige;
+            }
+         } 
+        }
+
+         @media screen and (min-width:$medium) {
+            header {
+                display: flex;
+                align-items: flex-end;
+                justify-content:space-between ;
+
+                
+                    .logo {
+                        margin-bottom: 0;
+        
+                    }
+                
+        
+                #nav-items {
+                    width: 50%;
+                    font-size: 20px;
+
+                }
+            }
+            
+        }

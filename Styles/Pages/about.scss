@@ -1,0 +1,44 @@
+@import "../../index";
+
+#about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .About-me {
+       text-align: center;
+       margin: 10px;
+       
+
+       p {
+           font-size: 24px;
+       }
+    }
+}
+
+
+#portfolio-container {
+   display: flex;
+   flex-direction: row;
+   padding: 20px;
+   padding: 3%;
+
+   .experience {
+    background-color: gray;
+    border: #222222 1px solid;
+    padding: 5px;
+    width: 45%;
+    text-align: left;
+   }
+
+   .education {
+   background-color: gray;
+   border: red 1px solid;
+   padding:5px;
+   margin: auto;
+   width: 45%;
+   text-align: left;
+   }
+}
+
+ 

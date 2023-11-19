@@ -1,0 +1,58 @@
+
+  
+  form {
+    background-color: $secondary-color;
+    padding: 16px;
+    width: 50%;
+    border-radius: 16px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+
+    box-shadow: 8px 9px 11px 10px rgba(255,0,0,0.43) ;
+
+    .form-elements {
+        margin-bottom:32px;
+    }
+
+    .form-input {
+        height:30px;
+        border: 1px solid brown;
+        border-radius: 4px;
+        outline: none;
+    }
+
+    .form-input:focus {
+        border: 1px solid blue;
+    }
+}
+
+#email-input {
+    margin-left: 40px;
+}
+
+#password-input {
+    margin-left: 20px;
+}
+
+#submit-btn {
+    height: 50px;
+    width: 200px;
+    font-size: 18px;
+    background-color: gray;
+    color: rgb(158, 64, 64);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: brown;
+}
+
+#btn-chat {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index:1;
+}
