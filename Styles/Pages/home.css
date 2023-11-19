@@ -71,41 +71,6 @@ body {
   justify-content: space-between;
 }
 
-#about-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#about-container .About-me {
-  text-align: center;
-  margin: 10px;
-}
-#about-container .About-me p {
-  font-size: 24px;
-}
-
-#portfolio-container {
-  display: flex;
-  flex-direction: row;
-  padding: 20px;
-  padding: 3%;
-}
-#portfolio-container .experience {
-  background-color: gray;
-  border: #222222 1px solid;
-  padding: 5px;
-  width: 45%;
-  text-align: left;
-}
-#portfolio-container .education {
-  background-color: gray;
-  border: red 1px solid;
-  padding: 5px;
-  margin: auto;
-  width: 45%;
-  text-align: left;
-}
-
 #contact-container {
   background-color: #f2efe6;
   display: flex;
@@ -113,6 +78,7 @@ body {
   justify-content: space-around;
   align-items: center;
   margin-top: 3%;
+  text-align: center;
 }
 #contact-container .contact-form {
   display: flex;
@@ -123,7 +89,11 @@ body {
 #contact-container .contact-links {
   display: flex;
   flex-direction: column;
+  gap: 15px;
+}
+#contact-container .contact-links i {
   font-size: 50px;
+  color: #222222;
 }
 #contact-container #email-input {
   margin-left: 40px;
@@ -167,7 +137,7 @@ body {
   }
   #contact-container .contact-links {
     flex-direction: row;
-    font-size: 60px;
+    flex-wrap: wrap;
   }
   #contact-container #email-input {
     margin-left: 40px;
@@ -220,7 +190,7 @@ body {
   }
   #skills .Profile .Intro p {
     display: block;
-    font-size: 10px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 600px) {
